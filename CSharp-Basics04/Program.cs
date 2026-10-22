@@ -18,6 +18,17 @@
                 { 1, 4 }
             };
             Console.WriteLine(shelfCopies[1, 0]);
+
+
+
+            // Answer Question 3
+
+            PrintWelcomeMessage();
+        }
+
+        static void PrintWelcomeMessage()
+        {
+            Console.WriteLine("Welcome to the Library!");
         }
     }
 }
