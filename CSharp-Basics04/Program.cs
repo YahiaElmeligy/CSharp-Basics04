@@ -85,6 +85,12 @@
 
             PrintBookInfo(pages: 400, title: "Design Patterns");
 
+
+
+            // Answer Question 12
+
+            PrintAllTitles("Clean Code", "The Pragmatic Programmer", "Refactoring");
+
         }
 
         static void PrintWelcomeMessage()
@@ -131,6 +137,14 @@
         static void PrintBookInfo(string title, int pages = 300)
         {
             Console.WriteLine($"Title: {title}, Pages: {pages}");
+        }
+
+        static void PrintAllTitles(params string[] titles)
+        {
+            foreach (string title in titles)
+            {
+                Console.WriteLine(title);
+            }
         }
     }
 }
