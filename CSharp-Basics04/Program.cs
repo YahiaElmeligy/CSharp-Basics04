@@ -72,6 +72,13 @@
                 Console.WriteLine(foundPrice);
             }
 
+
+
+            // Answer Question 10
+
+            PrintBookInfo("Clean Code");
+            PrintBookInfo("Refactoring", 450);
+
         }
 
         static void PrintWelcomeMessage()
@@ -113,6 +120,11 @@
             }
             price = 0;
             return false;
+        }
+
+        static void PrintBookInfo(string title, int pages = 300)
+        {
+            Console.WriteLine($"Title: {title}, Pages: {pages}");
         }
     }
 }
