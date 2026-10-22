@@ -30,6 +30,14 @@
             // Answer Question 4
 
             PrintBookTitle("Clean Code");
+
+
+
+            // Answer Question 5
+
+            int pages = 400;
+            AddBonusPages(pages);
+            Console.WriteLine(pages);
         }
 
         static void PrintWelcomeMessage()
@@ -40,6 +48,11 @@
         static void PrintBookTitle(string title)
         {
             Console.WriteLine("Book title: " + title);
+        }
+
+        static void AddBonusPages(int pages)
+        {
+            pages += 50;
         }
     }
 }
