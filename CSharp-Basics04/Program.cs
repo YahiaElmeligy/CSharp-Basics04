@@ -24,11 +24,22 @@
             // Answer Question 3
 
             PrintWelcomeMessage();
+
+
+
+            // Answer Question 4
+
+            PrintBookTitle("Clean Code");
         }
 
         static void PrintWelcomeMessage()
         {
             Console.WriteLine("Welcome to the Library!");
+        }
+
+        static void PrintBookTitle(string title)
+        {
+            Console.WriteLine("Book title: " + title);
         }
     }
 }
