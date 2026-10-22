@@ -46,6 +46,14 @@
             double[] bookPrices = { 25.5, 40.0 };
             ApplyDiscount(bookPrices);
             Console.WriteLine(bookPrices[0]);
+
+
+
+            // Answer Question 7
+
+            int pagesByRef = 400;
+            AddBonusPagesByRef(ref pagesByRef);
+            Console.WriteLine(pagesByRef);
         }
 
         static void PrintWelcomeMessage()
@@ -66,6 +74,11 @@
         static void ApplyDiscount(double[] prices)
         {
             prices[0] -= 5;
+        }
+
+        static void AddBonusPagesByRef(ref int pages)
+        {
+            pages += 50;
         }
     }
 }
