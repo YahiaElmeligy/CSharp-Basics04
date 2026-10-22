@@ -54,6 +54,14 @@
             int pagesByRef = 400;
             AddBonusPagesByRef(ref pagesByRef);
             Console.WriteLine(pagesByRef);
+
+
+
+            // Answer Question 8
+
+            double[] pricesArray = { 25.5, 40.0, 33.75 };
+            ReplaceArray(ref pricesArray);
+            Console.WriteLine(pricesArray.Length);
         }
 
         static void PrintWelcomeMessage()
@@ -79,6 +87,11 @@
         static void AddBonusPagesByRef(ref int pages)
         {
             pages += 50;
+        }
+
+        static void ReplaceArray(ref double[] prices)
+        {
+            prices = new double[] { 10.0, 12.5, 15.0 };
         }
     }
 }
