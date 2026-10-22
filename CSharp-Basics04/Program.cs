@@ -38,6 +38,14 @@
             int pages = 400;
             AddBonusPages(pages);
             Console.WriteLine(pages);
+
+
+
+            // Answer Question 6
+
+            double[] bookPrices = { 25.5, 40.0 };
+            ApplyDiscount(bookPrices);
+            Console.WriteLine(bookPrices[0]);
         }
 
         static void PrintWelcomeMessage()
@@ -53,6 +61,11 @@
         static void AddBonusPages(int pages)
         {
             pages += 50;
+        }
+
+        static void ApplyDiscount(double[] prices)
+        {
+            prices[0] -= 5;
         }
     }
 }
